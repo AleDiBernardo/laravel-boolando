@@ -1,9 +1,12 @@
+@use "./partials/mixins" as *;
+@use "./partials/variables" as *;
 @import "~bootstrap/scss/bootstrap";
 @import "../scss/partials/header";
 @import "../scss/partials/main";
 
 @import "../scss/partials/footer";
 @import "@fortawesome/fontawesome-free/css/all.css";
+
 
 // RESET
 *{
@@ -25,4 +28,25 @@ body{
 main{
     padding-top: 80px;
     // height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    gap: 10px;
+
+    @include flex(row, space-between, center);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+    li {
+        @include flex(row, center, center);
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        height: 100%;
+    }
 }

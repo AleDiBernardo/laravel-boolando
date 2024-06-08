@@ -1,11 +1,20 @@
-@use "./mixins" as *;
 
 
 footer{
     @include flex(row, center, center);
 
-    background-color: lightgreen;
-
+    background-color: black;
+    color: white;
     // debug
     height: 70px;
+    .font-size-15 {
+        font-size: 15px;
+    }
+    .font-size-20 {
+        font-size: 20px;
+    }
+
+    a:hover{
+        color: $header-bg-color;
+    }
 }

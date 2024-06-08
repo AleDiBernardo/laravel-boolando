@@ -1,5 +1,4 @@
-@use "./mixins" as *;
-@use "./variables" as *;
+
 
 header {
     @include flex(row, space-between, center);
