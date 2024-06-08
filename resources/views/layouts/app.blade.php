@@ -7,7 +7,7 @@
 
     @vite('resources/js/app.js')
 
-    <title>Document</title>
+    <title>{{ Request::route()->getName()}}</title>
 
 </head>
 <body>

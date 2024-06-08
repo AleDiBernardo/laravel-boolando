@@ -20,10 +20,24 @@ Route::get('/', function () {
     return view('home', $data);
 })->name('home');
 
-
-Route::get('/about', function () {
+Route::get('/women-shop', function () {
     $data=[
         'greetings' => "Laravel-Vite template",
     ];
-    return view('about', $data);
-})->name('about');
+    return view('woman', $data);
+})->name('woman');
+
+
+Route::get('/men-shop', function () {
+    $data=[
+        'greetings' => "Laravel-Vite template",
+    ];
+    return view('man', $data);
+})->name('man');
+
+Route::get('/kids-shop', function () {
+    $data=[
+        'greetings' => "Laravel-Vite template",
+    ];
+    return view('kid', $data);
+})->name('kid');
