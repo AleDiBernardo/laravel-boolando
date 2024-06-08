@@ -1,12 +1,17 @@
 
-
 footer{
-    @include flex(row, center, center);
+    @media (max-width: 578px) {
+        .container{
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
 
+    @include flex(row, center, center);
+    padding: 10px 0;
     background-color: black;
     color: white;
-    // debug
-    height: 70px;
+    
     .font-size-15 {
         font-size: 15px;
     }
@@ -17,4 +22,8 @@ footer{
     a:hover{
         color: $header-bg-color;
     }
+    .right-side-ftr{
+        max-width: 40%;
+    }
 }
+

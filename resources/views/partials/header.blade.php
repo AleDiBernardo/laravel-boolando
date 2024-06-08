@@ -4,6 +4,7 @@
         <div class="left-side">
         
             <ul class="d-flex justify-content-center gap-3">
+                <li class="{{ Request::route()->getName() === 'home' ? 'active' : '' }} d-md-none d-lg-none"><a href="{{ route('home') }}">Home</a></li>
                 <li class="{{ Request::route()->getName() === 'woman' ? 'active' : '' }}"><a href="{{ route('woman') }}">Donna</a></li>
                 <li class="{{ Request::route()->getName() === 'man' ? 'active' : '' }}"><a
                     href="{{ route('man') }}">Uomo</a></li>
@@ -11,7 +12,7 @@
                         href="{{ route('kid') }}">Bambini</a></li>
               </ul>
         </div>
-        <div class="middle">
+        <div class="middle d-none d-md-block d-lg-block">
             <a href="{{ route('home') }}">
             <img src="{{Vite::asset('resources/img/boolean-logo.png')}}" alt="">
             </a>

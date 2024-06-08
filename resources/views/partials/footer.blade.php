@@ -1,5 +1,5 @@
 <footer>
-    <div class="d-flex container justify-content-between">
+    <div class="d-flex container justify-content-between ">
         <div class="d-flex left-side-ftr flex-column">
             <span class="fw-bold">Boolando s.r.l</span>
             <ul class="d-flex gap-3 font-size-15">
