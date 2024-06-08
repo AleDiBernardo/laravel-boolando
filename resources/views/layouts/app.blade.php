@@ -7,7 +7,7 @@
 
     @vite('resources/js/app.js')
 
-    <title>{{ Request::route()->getName()}} ~ Boolando</title>
+    <title>{{ ucwords(Request::route()->getName() . " ~ boolando" )}} </title>
 
 </head>
 <body>
