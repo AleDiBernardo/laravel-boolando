@@ -14,10 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $data=[
-        'greetings' => "Laravel-Vite template",
-    ];
-    return view('home', $data);
+    $data= config("products.products");
+    return view('home', compact("data"));
 })->name('home');
 
 Route::get('/women-shop', function () {

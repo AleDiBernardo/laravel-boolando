@@ -1,0 +1,96 @@
+@use "./mixins" as *;
+@use "./variables" as *;
+
+/* CARD */
+
+.ms-card {
+
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+
+.img-container:hover .hover-img{
+    display: inline-block;
+}
+
+.img-container:hover .default-img {
+    display: none;
+}
+
+.heart-btn:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* image container */
+.img-container {
+    position: relative;
+}
+
+.hover-img {
+    display: none;
+}
+
+.heart-btn {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    font-size: 40px;
+    color:black;
+}
+
+.flex .heart-btn {
+    justify-content: center;
+    align-items: center;
+}
+
+.tag {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+
+}
+
+.sale-tag {
+    display: inline-block;
+    background-color: red;
+    padding: 5px;
+}
+
+.sustainability-tag {
+    display: inline-block;
+    background-color: green;
+    padding: 5px;
+
+}
+
+/* description */
+.description{
+    background-color: white;
+}
+.brand-text {
+    color: grey;
+}
+
+.des-text {
+    color: black;
+    text-transform: uppercase;
+}
+
+.after-discount {
+    color: red;
+}
+
+.before-discount {
+    text-decoration: line-through;
+    color: black;
+}
+

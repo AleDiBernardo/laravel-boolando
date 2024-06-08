@@ -4,6 +4,7 @@
 header {
     @include flex(row, space-between, center);
     position: fixed;
+    z-index: 9999;
     left: 0;
     top: 0;
     width: 100%;
@@ -58,6 +59,12 @@ header {
                         border-color: black;
                     }
                 }
+            }
+        }
+        .middle{
+            width: 150px;
+            img{
+                transform: translateX(-50%);
             }
         }
         .right-side {

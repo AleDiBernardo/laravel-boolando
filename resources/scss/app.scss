@@ -1,5 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import "../scss/partials/header";
+@import "../scss/partials/main";
+
 @import "../scss/partials/footer";
 @import "@fortawesome/fontawesome-free/css/all.css";
 
@@ -17,10 +19,10 @@ img{
 
 //you can delete this
 body{
-    background-color: rgb(109, 177, 255);
+    background-color: white;
 }
 
 main{
     padding-top: 80px;
-    height: 100vh;
+    // height: 100vh;
 }
