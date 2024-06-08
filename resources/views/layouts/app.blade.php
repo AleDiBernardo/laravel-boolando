@@ -15,6 +15,8 @@
 
 
     <main>
+<h1 class="text-center fw-bold">{{ ucwords(Request::route()->getName())}}</h1>
+
         <div class="container">
             @yield('content')
         </div>
