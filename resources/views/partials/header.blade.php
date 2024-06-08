@@ -5,11 +5,11 @@
         
             <ul class="d-flex justify-content-center gap-3">
                 <li class="{{ Request::route()->getName() === 'home' ? 'active' : '' }} d-md-none d-lg-none"><a href="{{ route('home') }}">Home</a></li>
-                <li class="{{ Request::route()->getName() === 'woman' ? 'active' : '' }}"><a href="{{ route('woman') }}">Donna</a></li>
+                <li class="{{ Request::route()->getName() === 'woman' ? 'active' : '' }}"><a href="{{ route('woman') }}">Woman</a></li>
                 <li class="{{ Request::route()->getName() === 'man' ? 'active' : '' }}"><a
-                    href="{{ route('man') }}">Uomo</a></li>
-                    <li class="{{ Request::route()->getName() === 'kid' ? 'active' : '' }}"><a
-                        href="{{ route('kid') }}">Bambini</a></li>
+                    href="{{ route('man') }}">Man</a></li>
+                    <li class="{{ Request::route()->getName() === 'children' ? 'active' : '' }}"><a
+                        href="{{ route('children') }}">Children</a></li>
               </ul>
         </div>
         <div class="middle d-none d-md-block d-lg-block">

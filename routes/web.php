@@ -33,9 +33,9 @@ Route::get('/men-shop', function () {
     return view('man', $data);
 })->name('man');
 
-Route::get('/kids-shop', function () {
+Route::get('/children-shop', function () {
     $data=[
         'greetings' => "Laravel-Vite template",
     ];
-    return view('kid', $data);
-})->name('kid');
+    return view('children', $data);
+})->name('children');
